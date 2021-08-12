@@ -122,6 +122,10 @@ h1 {
     padding:0;
 }
 
+.icecream:hover{
+    cursor: pointer;
+}
+
 /* Contact  */
 
 #contact{
