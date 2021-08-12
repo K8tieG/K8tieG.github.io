@@ -1,48 +1,62 @@
 * {
     font-family: 'Roboto Condensed', sans-serif;
+    margin: 10px;
 }
 /* nav */
+.nav-container{
+    background-color: #DFEEEA;
+    height:50px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+ }
+.nav-logo{
+    display: inline;
+    float: left;
+    margin-left: 25px;
+    padding: 5px 7px 5px 5px;
+    justify-content: flex-start;
+    height: 25px;
+    width: 25px;
+    border-style: solid;
+    transition: transform 250ms; 
+}
+.nav-logo:hover {
+    transform: translateX(10px);
+}
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    
   }
+
 li {
     display: inline;
     float: right;
 }
+
 a {
-    display: block;
     padding: 8px;
 }
 li a {
-  width: 60px;
   text-decoration: none;
-  color: white;
   font-size: 18px;
-}
-.big-container{
-    background-color:#5E8B7E; ;
-}
-/* .nav-container{
-   background-color: red
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.nav-links {
-    justify-content: space-around;
-    list-style-type: none;
-} */
+li a:hover{
+    color: #5E8B7E;
+}
+
 /* feature */
 .container{
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    /* align-content: center; */
     padding-top: 2em;
-    width: 100%;
     height: 75vh;
-    
+    background-color:#5E8B7E; 
 }
 .feature {
     width: 100%;
@@ -62,9 +76,15 @@ h1 {
 
 /* About Me */
 .bio{
-    text-align:left;
+    text-align:center;
     font-size: 1em;
     letter-spacing: 2px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.about-title{
+    text-align:center;
 }
 
 /* Skills and Projects  */
@@ -74,7 +94,7 @@ h1 {
     justify-content: space-between;
     width:100%;
 }
-.box {
+#box-1, #box-2 {
     width: 50%;
     text-align: center;
 }
@@ -89,17 +109,22 @@ h1 {
     text-align:center;
     font-size: 1em;
     letter-spacing: 2px;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
+.header {
+    padding-bottom: 25px ;
+}
 .icecream {
-    height:75px;
-    width: 75px;
-    border-radius: 25%;
+    height:100px;
+    width: 100px;
+    padding:0;
 }
 
 /* Contact  */
 
-.contact{
+#contact{
     text-align: center;
 }
 .fab{
